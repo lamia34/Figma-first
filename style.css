@@ -1,0 +1,160 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+  width: 1280px;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+} 
+
+
+article{
+    display: grid;
+    grid-template-columns: 600px 300px;
+    justify-content: center;
+    align-items: center;
+    column-gap: 6em;
+    margin: 2em;
+    padding-left: 2em;
+  
+} 
+ 
+ .about{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 3em;
+    padding-right: 40%;
+    gap: 100px;
+ }
+ .text{
+    display: flex;
+    gap: 20px;
+ }
+.kurs h2{
+    font-size: 55px;
+    font-weight: 700;
+    font-family: "Roboto Slab", serif;
+    padding-left: 2.8em;
+    padding-top: 0.8em;
+}
+ .text1{
+    width:74%;
+    font-size: 24px;
+    font-weight: 400;
+}
+.text2{
+    width: 94%;
+    font-size: 24px;
+    font-weight: 400;
+} 
+.icon{
+   padding-left: 6em; 
+}
+.text p{
+    width: 150px;
+}
+ .format{
+    margin: 6em;
+}
+
+ .info{
+    display: flex;
+    justify-content: flex-start;
+     gap: 50px;
+    margin: 50px;
+    
+ }
+.info1,.info2,.info3{
+    width: 250px;
+}
+.head{
+    font-size: 25px;
+    font-weight: 700;
+    color: #1E4681;
+   
+}
+section h2{
+    font-family: "Roboto Slab", serif;
+    font-size: 55px;
+    font-weight: 700;
+    padding-left: 60px;
+} 
+.info p{
+    padding-top: 10px;
+}
+@media only screen and (max-width:992px) {
+    header h2{
+        font-size: 32px;
+        padding-left: 5em;
+    }
+     .text1,.text2{
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .text1{
+        width: 60%;
+    }
+    .text2{
+        width: 65%; 
+    }
+    .man{
+        width: 181.86px;
+       height: 182.44px;
+
+    }
+    .icon{
+        width: 134.37px;
+       height: 117.57px;
+    }
+    .text p{
+        font-size: 11px;
+        width: 180px;
+    }
+    .text h3{
+        font-size: 15px;
+    } 
+    .about{
+        padding-right: 60%;
+    }
+    section h2{
+        font-size: 32px;
+    }
+    .head{
+        font-size: 15px;
+        font-weight: 700;
+    }
+    
+}
+@media only screen and (max-width: 320px){
+    
+    .box1{
+        grid-column: 1/span4;
+        width: 600px;
+    }
+    .box2{
+        padding: 50px;
+    }
+    .icon{
+        display: none;
+    }
+    .text{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding-left: 4em;
+     } 
+     header h2{
+        padding-left: 3.6em;
+     }
+     .info{
+        flex-direction: column;
+        padding-left: -60px;
+        
+    }
+    section h2{
+        padding-left: 0.5em;
+    }
+
+}
